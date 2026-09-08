@@ -11,15 +11,56 @@
 nav {    
     height: 50px;
 }
-.logo{}
-.menu{}
-.ingreso{}
+.logo{
+    /* background: red; */
+    /* background: rgb(255, 0, 0); */
+    /* background: #F00; */
+    /* background: rgb(255, 255, 255);
+    background: #FFF;
+    background: #000;
+    background: #000000;
+    background: #FFFFFF;
+    background: #F00; */
+    background: rgb(50, 14, 15);
+    background: #8C4227;
+    text-align: center;
+    padding: 5px;    
+}
+.logo img{
+    height: 40px;
+}
+.menu{
+    /* background: green;     */
+    /* background: rgb(0, 255, 0); */
+    /* background: #0F0; */
+    background: #98A62E;
+}
+.ingreso{
+    /* background: blue; */
+    background: rgb(65, 127, 166);
+    /* background: #00F; */
+    /* background: #0000FF; */
+}
 /* Encabezado */
 header, section   {
     height: 600px;
 }
+
+header {
+    background-image: url(../img/fondo.jpg);
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+}
 /* Portafolio */
-.port-col{}
+.port-col{
+    padding: 50px;
+    text-align: center;
+}
+.port-col img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
 .nosotros{}
 /* Nosotros */
 .nos-fila{
