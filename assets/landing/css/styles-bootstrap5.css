@@ -10,6 +10,10 @@
     font-style: normal;
 }
 /* Clases Especiales */
+.tope{
+	position: relative;
+	top: -52px;
+}
 .titulo{
     height: 50px;
     text-align: center;
@@ -32,6 +36,7 @@ p{
 /* Navegador */
 nav {    
     height: 50px;
+    position: fixed;
 }
 .logo{
     /* background: red; */
@@ -64,7 +69,7 @@ nav {
     /* background: #0000FF; */
 }
 /* Encabezado */
-header, section   {
+section   {
     height: 600px;
 }
 
@@ -72,26 +77,6 @@ header {
     /* background-image: url(../img/fondo.jpg);
     background-size: 100% 100%; */
     /* background-attachment: fixed; */
-}
-
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-th{
-    text-align: center;
-    font-weight: bold;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
 }
 
 /* Portafolio */
@@ -121,7 +106,7 @@ tr:nth-child(even) {
 .contactenos .cont-col-fila-arr{
     padding: 15px;
 }
-form{
+/* form{
     width: 100%;
     border: 1px solid gray;
     padding: 20px;
@@ -140,7 +125,7 @@ textarea{
 }
 input[type="submit"]{
     width: 100%;
-}
+} */
 .contactenos iframe{
     width: 100%;
     height: 100%;
@@ -152,6 +137,12 @@ input[type="submit"]{
 }
 .cont-col-fila-abj{
     height: 30%;
+}
+.cont-col-fila-abj i{
+    font-size: 5em;
+}
+.cont-col-fila-abj i.fa-youtube{
+    color: red;
 }
 /* Pie de Página */
 footer {
