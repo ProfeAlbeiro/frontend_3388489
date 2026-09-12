@@ -45,9 +45,9 @@
             </div>
         </div>
     </div>
-    <div class="container-lg .container-fluid-md contenedor">
+    <div class="container-lg .container-fluid-md contenedor" id="contenedor">
         <!-- Navegador -->
-        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary position-sticky">
+        <nav id="navegador" class="navbar sticky-top navbar-expand-lg bg-body-tertiary position-sticky">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -58,7 +58,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="#" id="inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#portafolio">Portafolio</a>
@@ -170,24 +170,27 @@
         </div>
         <section class="row contactenos">
             <div class="col p-5 cont-col border borde">
-                <form action="#" method="POST">
+                <form action="index.html#contactenos" name="formContact">
                     <h2>CONTÁCTENOS</h2>
                     <hr>
                     <div>
-                        <label for="">Nombre</label>
-                        <input type="text" name="nombre" placeholder="Nombres y Apellidos">
+                        <label for="">Nombres</label>
+                        <input type="text" name="nombres" id="nombres" placeholder="Nombres y Apellidos" pattern="[a-zA-ZáéíóúÁÉÍÓÚäëïöüÄËÏÖÜàèìòùÀÈÌÒÙñÑ]{2,50}" title="Ingrese un Nombre Válido" required>
                     </div>
                     <div>
                         <label for="">Email</label>
-                        <input type="email" name="email" placeholder="ejemplo@ejemplo.com">
+                        <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}" title="Ingrese un Email Válido" required>
                     </div>
                     <div>
-                        <textarea cols="30" rows="10"></textarea>
+                        <label for="">Edad</label>
+                        <input type="number" name="edad" id="edad" min="18" max="120" title="Ingrese una Edad Válida" required>
                     </div>
                     <div>
-                        <input type="submit" value="Enviar">
+                        <textarea id="mensaje" cols="30" rows="10" minlength="10" maxlength="300" title="Ingrese un Mensaje Válido" required></textarea>
                     </div>
-
+                    <div>
+                        <input type="submit" id="submit-contac" value="Enviar">
+                    </div>
                 </form>
             </div>
             <div class="col p-0 cont-col">

@@ -144,6 +144,47 @@ input[type="submit"]{
 .cont-col-fila-abj i.fa-youtube{
     color: red;
 }
+
+/* Validación de Formularios: Html y Css */
+form input:focus,
+form textarea:focus{
+	outline: none;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+textarea{
+	border: 1px solid #2040aa;
+}
+form input[type="text"]:focus:required:invalid,
+form input[type="email"]:focus:required:invalid,
+form input[type="password"]:focus:required:invalid,
+form input[type="number"]:focus:required:invalid,
+textarea:focus:invalid{
+	border: 2px solid red;
+}
+form input[type="text"]:focus:required:valid,
+form input[type="email"]:focus:required:valid,
+form input[type="password"]:focus:required:valid,
+form input[type="number"]:focus:required:valid,
+textarea:focus:required:valid{
+	border: 2px solid green;
+}
+form input[type="text"]:required:invalid,
+form input[type="email"]:required:invalid,
+form input[type="password"]:required:invalid,
+form input[type="number"]:required:invalid,
+textarea:invalid{
+	border: 1px solid #2040aa;
+}
+form input[type="text"]:required:valid,
+form input[type="email"]:required:valid,
+form input[type="password"]:required:valid,
+form input[type="number"]:required:valid,
+textarea:required:valid{
+	border: 2px solid green;
+}
 /* Pie de Página */
 footer {
     height: 50px;
